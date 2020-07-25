@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Latitude</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+    </head>
+   
+    <body>
+        <nav class="navbar navbar-fixed-top"> 
+            <div class="container"> 
+                <div class = "color_tab">
+                    <a class="navbar-brand" href="index.html">Latitude</a>
+                </div>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                Plots
+                                <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="max_temp.html"> Max Temperature</a>
+                                </li>
+                                <li>
+                                    <a href="humidity.html">Humidity</a>
+                                </li>
+                                <li>
+                                    <a href="cloudiness.html">Cloudiness</a>
+                                </li>
+                                <li>
+                                    <a href="wind_speed.html">Wind Speed</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="comparison.html">Comparison</a>
+                        </li>
+                        <li>
+                            <a href="data_page.html">Data</a>
+                        </li>
+                    </ul>
+            </div>
+        </nav>
+       
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class = "box box-left">
+                        <section class ="summary">
+                            <h1> <strong>Summary: Latitude vs. X </h1> 
+                            <hr>
+                            <a target="_blank" href="assets/images/Fig1.png">
+                                <img id="T-max" src="assets/images/Fig1.png" alt="Latitude of cities"  class="center" style="float:left";>
+                            </a>  
+
+                            <p id="1"> 
+                                The purpose of this project was to analyze how weather changes as you get closer to the equator. 
+                                To accomplish this analysis, we first pulled data from OpenWeatherMap API to assemble a dataset on over 500 cities.
+                            </p>
+                            <p id = "2">
+                                After assembling the dataset, we used Matplotlib to plot various aspects of teh weather vs. latitude. Factors are looked at included:
+                                temperature, cloudiness, wind speed, and humidity. The site provides the source data and visualization created as part of the analysis, as well as explanations and descriptions of any trends and correlation witnessed.
+                            </p>
+                        </section>                       
+                    </div>   
+                </div>
+        
+                <div class="col-md-4">
+                    <div class = "box box-right">
+                        <section class ="visualization">
+                            <h1> <strong>Visualizations</strong></h1> 
+                            <hr>
+                            <div class="row">
+                                <div class="col-xs-3 col-sm-3 col-md-6">
+                                    <a target="_blank" href="assets/images/Fig1.png">
+                                        <img id="T-max"  src="assets/images/Fig1.png" alt="Maximum Temperature">
+                                    </a> 
+                                </div> 
+                                <div class="col-xs-3 col-sm-3 col-md-6">
+                                    <a target="_blank" href="assets/images/Fig2.png">
+                                        <img id="humidity"  src="assets/images/Fig2.png" alt="Humidity">
+                                    </a> 
+                                </div>
+                                <div class="col-xs-3 col-sm-3 col-md-6">
+                                    <a target="_blank" href="assets/images/Fig3.png">
+                                        <img id="cloudiness"  src="assets/images/Fig3.png" alt="Cloudiness">
+                                    </a>
+                                </div>
+                                <div class="col-xs-3 col-sm-3 col-md-6">
+                                    <a target="_blank" href="assets/images/Fig4.png">
+                                        <img id="wind_speed"  src="assets/images/Fig4.png" alt="Wind Speed">
+                                    </a> 
+                                </div> 
+                            </div>
+                        </section>                       
+                </div>
+         
+                
+                <div class="navbar-xs navbar-fixed-bottom ">
+                    <p> @copyright Coding Bootcamp 2020</p>
+                </div>
+                <div class="navbar-xxs navbar-fixed-bottom ">
+                </div>
+               
+        
+
+
+
+        <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+            crossorigin="anonymous">
+            </script>
+
+        
+          
+
+            
+    </body>
+</html>
